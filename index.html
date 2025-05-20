@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+
+<body class="m-10">
+    <header>
+
+    </header>
+    <main>
+        <div class="">
+            <!-- Products container section -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <!-- Triangle -->
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img src="./images/triangle.png" alt="Triangle" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Triangle</h2>
+                        <p> Area = 0.5 x b x h</p>
+                        <!-- input values area -->
+                        <div>
+                            <input id="triangleBase" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="B">
+                            <span >cm</span>
+                            <input id="triangleHeight" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="H">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="triangle-area"></span> cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>    
+                </div>
+                <!-- Rectangle -->
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img src="./images/rectangle.png" alt="Rectangle" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rectangle</h2>
+                         <p> Area = w x i</p>
+                        <!-- input values area -->
+                        <div>
+                            <input id="rectangle-Base" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="W">
+                            <span >cm</span>
+                            <input id="rectangle-Height" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="I">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="rectangle-area"></span> cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Parallelogram -->
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img src="./images/parallelogram.png" alt="Parallelogram" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rhombus -->
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img src="./images/rhombus.png" alt="Rhombus" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagon -->
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img src="./images/pentagon.png" alt="Pentagon" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ellipse -->
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <figure>
+                        <img src="./images/ellipse.png" alt="Ellipse" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Products container section end -->
+
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
