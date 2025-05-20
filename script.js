@@ -50,3 +50,27 @@ function calculateRhombusArea(){
     const rhombusAreaOutput = document.getElementById('rhombus-area');
     rhombusAreaOutput.innerText = rhombusArea;
 }
+
+// for pentagon area
+function calculatePentagonArea(){
+    const pentagonBaseInput = document.getElementById('pentagon-Base');
+    const pentagonHeightInput = document.getElementById('pentagon-Height');
+    const pentagonBase = parseFloat(pentagonBaseInput.value);
+    const pentagonHeight = parseFloat(pentagonHeightInput.value);
+    const pentagonArea = (pentagonBase * pentagonHeight) / 2;
+    // display the pentagon area
+    const pentagonAreaOutput = document.getElementById('pentagon-area');
+    pentagonAreaOutput.innerText = pentagonArea;
+}
+
+// for ellipse area 
+function calculateEllipseArea(){
+    const ellipseBaseInput = document.getElementById('ellipse-Base');
+    const ellipseHeightInput = document.getElementById('ellipse-Height');
+    const ellipseBase = parseFloat(ellipseBaseInput.value);
+    const ellipseHeight = parseFloat(ellipseHeightInput.value);
+    const ellipseArea = Math.PI * (ellipseBase) * (ellipseHeight);
+    // display the ellipse area
+    const ellipseAreaOutput = document.getElementById('ellipse-area');
+    ellipseAreaOutput.innerText = ellipseArea;
+}

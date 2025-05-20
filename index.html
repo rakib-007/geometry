@@ -18,7 +18,7 @@
     <main>
         <div class="">
             <!-- Products container section -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
                 <!-- Triangle -->
                 <div class="card bg-base-100 w-96 shadow-sm">
@@ -121,10 +121,20 @@
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Pentagon</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        <p>Area = 0.5 x p x b
                         </p>
+                         <!-- input values area -->
+                        <div>
+                            <input id="pentagon-Base" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="p">
+                            <span >cm</span>
+                            <input id="pentagon-Height" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="pentagon-area"></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -135,10 +145,19 @@
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Ellipse</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        <p>π x a x b
                         </p>
+                        <div>
+                            <input id="ellipse-Base" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="a">
+                            <span >cm</span>
+                            <input id="ellipse-Height" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="ellipse-area"></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
