@@ -73,10 +73,20 @@
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        <p>Area = b x h
                         </p>
+                        <!-- input values area -->
+                        <div>
+                            <input id="parallelogram-Base" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+                            <span >cm</span>
+                            <input id="parallelogram-Height" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="parallelogram-area"></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -87,10 +97,20 @@
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Rhombus</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        <p>Area = .5 x d1 x d2
                         </p>
+                        <!-- input values area -->
+                        <div>
+                            <input id="rhombus-Base" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="d1">
+                            <span >cm</span>
+                            <input id="rhombus-Height" class="w-24 p-2 rounded-sm" type="text" name="" id="" placeholder="d2">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="rhombus-area"></span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
